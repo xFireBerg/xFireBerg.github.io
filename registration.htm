@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+	<title>Registration</title>
+<style>
+.active {
+	font-size: larger;
+	}
+
+table, td {
+	text-align: center;
+	border: 1px solid black;
+	}
+</style>
+</head>
+
+<body>
+
+<br>
+<br>
+<br>
+
+
+<table style="width:100%;">
+<tr>
+<td><a href="home.htm">Home</a></td>
+<td><a href="localdishes.htm">Local Dishes</a></td>
+<td><a href="historicalplaces.htm">Historical Places</a></td>
+<td><a href="usefullinks.htm">Useful Links</a></td>
+<td><a href="aboutme.htm">About me</a></td>
+<td><a href="contactme.htm">Contact me</a></td>
+<td><a class="active" href="registration.htm">Registration</a></td>
+</tr>
+</table>
+<div style="text-align:center;">
+<form style="display:inline-block;margin-left:auto;margin-right:auto;text-align:left;">
+<br>
+<br>
+<br>
+<br>
+<label for="name">First name:</label>
+<input type="text" name="name"><br>
+
+<label for="surname">Surname:</label>
+<input type="text" name="surname"><br>
+
+<label for="date">Date of birth:</label>
+<input type="date" name="birthday"><br>
+
+<label for="email">Email:</label>
+<input type="email" name="email"><br>
+
+<label for="password">Password:</label>
+<input type="password" name="password"><br>
+
+Gender:
+<select name="gender">
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select><br>
+<label for="interests">Interests:</label><br>
+<input type="checkbox" name="interests" value="Cycling">Cycling<br>
+<input type="checkbox" name="interests" value="Swimming">Swimming<br>
+<input type="checkbox" name="interests" value="Hiking">Hiking<br>
+<input type="checkbox" name="interests" value="Travelling">Travelling<br>
+<input type="checkbox" name="interests" value="Reading">Reading<br>
+<input type="checkbox" name="interests" value="Music">Music<br>
+<input type="checkbox" name="interests" value="Programming">Programming<br>
+<input type="checkbox" name="interests" value="Chess">Chess<br>
+<br>
+<form>
+</form>
+<a href="submitted.htm"><input type="submit" name="submit" value="Submit"></a>
+<input type="reset" name="reset" value="reset">
+</form>	
+</div>
+	
+	
+	
+</body>
+</html>
