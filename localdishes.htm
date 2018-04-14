@@ -1,59 +1,111 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Local Dishes</title>
-<style>
-table, td {
-	text-align: center;
-	border: 1px solid black;
-	}
+  <title>Local Dishes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
 </style>
 </head>
-
 <body>
 
-<br>
-<br>
-<br>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Zabi</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="home.htm">Home</a></li>
+<!--         <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li> -->
+        <li class="active"><a href="localdishes.htm">Local Dishes</a></li>
+        <li><a href="historicalplaces.htm">Historical Places</a></li>
+		<li><a href="usefullinks.htm">Useful Links</a></li>
+		<li><a href="aboutme.htm">About me</a></li>
+		<li><a href="contactme.htm">Contact me</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="registration.htm"><span class="glyphicon glyphicon-user"></span> Registration</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+ <h1  style="text-align:center">Local Dishes</h1>
+ 
+ <br><br>
+ 
+ <div class="text-center">
+<p >    <!-- style="display:block;font-size:larger;font-family:courier;max-width:50%;margin-center:auto;margin-center:auto;text-align:justify;" -->
 
-<table style="width:100%;">
-<tr>
-<td><a href="home.htm">Home</a></td>
-<td><a style="font-size:larger;" href="localdishes.htm">Local Dishes</a></td>
-<td><a href="historicalplaces.htm">Historical Places</a></td>
-<td><a href="usefullinks.htm">Useful Links</a></td>
-<td><a href="aboutme.htm">About me</a></td>
-<td><a href="contactme.htm">Contact me</a></td>
-<td><a href="registration.htm">Registration</a></td>
-</tr>
-</table>
-
-<br><br><br><br>
-<h1 style="text-align:center">Traditional Afghan Dishes</h1><br><br><br><br>
-
-<h2> &emsp; &emsp; 1. Mantoo </h2>
+<h2>1. Mantoo </h2>
+<div class="row">
+<div  class="col-md-6 col-md-offset-3">
 <figure>
-  <img src="/Images/mantoo.jpg" alt="Traditional Afghan Mantoo">
+  <img src="https://www.sbs.com.au/food/sites/sbs.com.au.food/files/styles/full/public/Mantoo.jpg" class="img-responsive" alt="Traditional Afghan Mantoo">
 </figure>
-<p style="max-width:704px;text-align:left;display:inline-block;margin-left:auto;margin-left:2%;"><b>This Afghani dumpling recipe involves filling gow gee wrappers (or you can make your own pastry) with a meat and onion mixture, steaming them, then serving them with a split pea sauce and garlic yoghurt. It is truly delicious.</b></p><br>
 
-<h2> &emsp; &emsp; 2. Kabuli Pilaw </h2>
+<p><!-- style="max-width:704px;text-align:left;display:inline-block;margin-left:auto;margin-left:2%;" --><b>This Afghani dumpling recipe involves filling gow gee wrappers (or you can make your own pastry) with a meat and onion mixture, steaming them, then serving them with a split pea sauce and garlic yoghurt. It is truly delicious.</b></p><br>
+</div>
+</div>
+<hr class="style-two">
+<div class="row">
+<div  class="col-md-6 col-md-offset-3">
+<h2>2. Kabuli Pilaw </h2>
 <figure>
-  <img src="/Images/KabuliPilau.jpg" alt="Kabuli Pilaw">
+  <img src="https://www.sbs.com.au/food/sites/sbs.com.au.food/files/styles/full/public/KabuliPilau.jpg" class="img-responsive" alt="Kabuli Pilaw">
 </figure>
-<p style="max-width:704px;text-align:left;display:inline-block;margin-left:auto;margin-left:2%;"><b>This dish is widely considered to be the national dish of Afghanistan. Intensely flavoured with spices the rice is layered with the lamb to make a hearty one dish meal. Lamb is the traditional meat but you could substitute with beef. You will need to increase the cooking time if not cooking this dish with the aid of a pressure cooker.</b></p>
+<p> <!-- style="max-width:704px;text-align:left;display:inline-block;margin-left:auto;margin-left:2%;" --><b>This dish is widely considered to be the national dish of Afghanistan. Intensely flavoured with spices the rice is layered with the lamb to make a hearty one dish meal. Lamb is the traditional meat but you could substitute with beef. You will need to increase the cooking time if not cooking this dish with the aid of a pressure cooker.</b></p>
+</div>
+</div>
+<hr class="style-two">
+<div class="row">
+<div  class="col-md-6 col-md-offset-3">
+<h2>3. Bolani</h2>
+<figure>
+  <img src="https://dl.dropboxusercontent.com/s/ii7573irij4j19u/bolani.jpg" class="img-responsive" alt="Bolani">
+</figure>
+<p> <!-- style="max-width:704px;text-align:left;display:inline-block;margin-left:auto;margin-left:2%;" --><b>The very popular bulani are pockets of Afghan bread filled with different vegetable mixtures and fried. Tear the bulani into pieces and dip into homemade plain yoghurt before eating.</b></p>
+</div>
+</div>
+<hr class="style-two">
+<div class="row">
+<div  class="col-md-6 col-md-offset-3">
+<h2>4. Korme Kofta </h2>
+<figure>
+  <img src="https://www.sbs.com.au/food/sites/sbs.com.au.food/files/styles/full/public/My-Neighbours-Kitchen_Afghan-Meatballs%281%29.jpg" class="img-responsive" alt="Qorme Kofta">
+</figure>
+<p> <!-- style="max-width:704px;text-align:left;display:inline-block;margin-left:auto;margin-left:2%;" --><b>We make korme kofta for Nowruz – New Year – along with many other dishes, including colourful rice, lamb curry and haft mewa (seven fruits). Nowruz, meaning "new day", is the first day of spring (the vernal equinox), but in Afghanistan, the festival can last for two weeks. It’s a time of good luck, fortune and new starts.</b></p>
+</div>
+</div>
 
-<h2> &emsp; &emsp; 3. Bolani</h2>
-<figure>
-  <img src="/Images/bolani.jpg" alt="Bolani" height="396px" width="704px">
-</figure>
-<p style="max-width:704px;text-align:left;display:inline-block;margin-left:auto;margin-left:2%;"><b>The very popular bulani are pockets of Afghan bread filled with different vegetable mixtures and fried. Tear the bulani into pieces and dip into homemade plain yoghurt before eating.</b></p>
 
-<h2> &emsp; &emsp; 4. Korme Kofta </h2>
-<figure>
-  <img src="/Images/qorma.jpg" alt="Qorme Kofta">
-</figure>
-<p style="max-width:704px;text-align:left;display:inline-block;margin-left:auto;margin-left:2%;"><b>We make korme kofta for Nowruz – New Year – along with many other dishes, including colourful rice, lamb curry and haft mewa (seven fruits). Nowruz, meaning "new day", is the first day of spring (the vernal equinox), but in Afghanistan, the festival can last for two weeks. It’s a time of good luck, fortune and new starts.</b></p>
-	
+
+</div>
+
+</p>
+</div>
 </body>
 </html>

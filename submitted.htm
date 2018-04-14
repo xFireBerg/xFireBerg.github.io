@@ -1,39 +1,60 @@
-<!doctype html>
-<html>
-<head>
-	<title>Registration</title>
-<style>
-table, td {
-	text-align: center;
-	border: 1px solid black;
-	}
-</style>
-</head>
 
+<!-- <img src="/Images/submitted.png" alt="Successful submission" style="display:block;margin-left:auto;margin-right:auto;width:50%;width:500px;height:300px;align:center;"> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+ <style>
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style> 
+</head>
 <body>
 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Zabi</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="home.htm">Home</a></li>
+        <li><a href="localdishes.htm">Local Dishes</a></li>
+        <li><a href="historicalplaces.htm">Historical Places</a></li>
+		<li><a href="usefullinks.htm">Useful Links</a></li>
+		<li><a href="aboutme.htm">About me</a></li>
+		<li><a href="contactme.htm">Contact me</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="registration.htm"><span class="glyphicon glyphicon-user"></span> Registration</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 <br>
 <br>
-<br>
+<div class="text-center" style="font-size:4em;height:100%;"> 
+<div class="container">
 
-
-<table style="width:100%;">
-<tr>
-<td><a href="home.htm">Home</a></td>
-<td><a href="localdishes.htm">Local Dishes</a></td>
-<td><a href="historicalplaces.htm">Historical Places</a></td>
-<td><a href="usefullinks.htm">Useful Links</a></td>
-<td><a href="aboutme.htm">About me</a></td>
-<td><a href="contactme.htm">Contact me</a></td>
-<td><a style="font-size:larger;" href="registration.htm">Registration</a></td>
-</tr>
-</table>
-<br>
-<br>
-<br>
-
-<img src="/Images/submitted.png" alt="Successful submission" style="display:block;margin-left:auto;margin-right:auto;width:50%;width:500px;height:300px;align:center;">
-	
-	
+<p><span class="glyphicon glyphicon-ok"></span> Submission Successful</p>
+</div>
+</div>
 </body>
 </html>

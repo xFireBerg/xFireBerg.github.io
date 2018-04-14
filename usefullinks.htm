@@ -1,37 +1,47 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Useful Links</title>
-<style>
-table, td {
-	text-align: center;
-	border: 1px solid black;
-	}
-</style>
+  <title>About me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-
-<br>
-<br>
-<br>
-
-
-<table style="width:100%;">
-<tr>
-<td><a href="home.htm">Home</a></td>
-<td><a href="localdishes.htm">Local Dishes</a></td>
-<td><a href="historicalplaces.htm">Historical Places</a></td>
-<td><a style="font-size:larger;" href="usefullinks.htm">Useful Links</a></td>
-<td><a href="aboutme.htm">About me</a></td>
-<td><a href="contactme.htm">Contact me</a></td>
-<td><a href="registration.htm">Registration</a></td>
-</tr>
-</table>
-	<br>
-	<br>
-	<br>
-	<div style="display:block;margin-left:auto;margin-right:auto;width:50%;width:500px;height:300px;align:center;">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Zabi</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="home.htm">Home</a></li>
+        <li><a href="localdishes.htm">Local Dishes</a></li>
+        <li><a href="historicalplaces.htm">Historical Places</a></li>
+		<li><a href="usefullinks.htm">Useful Links</a></li>
+		<li class="active"><a href="aboutme.htm">About me</a></li>
+		<li><a href="contactme.htm">Contact me</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="registration.htm"><span class="glyphicon glyphicon-user"></span> Registration</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container" style="text-align:center">
+ <h1>Useful Links</h1>
+ <br><br>
+ 
+ <div style="display:block;margin-left:auto;margin-right:auto;width:50%;width:500px;height:300px;align:center;">
 	<a href="http://moph.gov.af/en" target="_blank">Ministry of Public Health of Afghanistan</a><br>
 	<a target="_blank" href="http://www.icrc.org/eng/where-we-work/asia-pacific/afghanistan/index.jsp">International Committee of the Red Cross</a><br>
 	<a target="_blank" href="http://www.ibnsina.org.af/">Ibn Sina</a><br>
@@ -39,8 +49,18 @@ table, td {
 	<a href="http://mom.gov.af/en">Ministry of Mines &amp; Petroleum (MOMP)</a><br>
 	<a href="http://www.epaa.org.af/">Export Promotion Agency of Afghanistan (EPAA)</a><br>
 	<a href="http://www.mfa.gov.af/"><span">Afghan Ministry of Foreign Affairs (MoFA)</span></a><br>
-	
-	</div>
-	
+</div>
+</div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+

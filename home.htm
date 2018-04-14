@@ -1,42 +1,59 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Home</title>
-<style>
-table, td {
-	text-align: center;
-	border: 1px solid black;
-	}
-</style>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
 <body>
 
-<br>
-<br>
-<br>
-
-
-<table style="width:100%;">
-<tr>
-<td><a style="font-size:larger;" href="home.htm">Home</a></td>
-<td><a href="localdishes.htm">Local Dishes</a></td>
-<td><a href="historicalplaces.htm">Historical Places</a></td>
-<td><a href="usefullinks.htm">Useful Links</a></td>
-<td><a href="aboutme.htm">About me</a></td>
-<td><a href="contactme.htm">Contact me</a></td>
-<td><a href="registration.htm">Registration</a></td>
-</tr>
-</table>
-<br>
-<br>
-<br>
-<h1 style="text-align:center">KABUL</h1>
-<p style="font-size:larger;font-family:courier;max-width:50%;display:block;margin-left:auto;margin-right:auto;text-align:justify;">  &emsp; &emsp; Kabul is the capital of Afghanistan and its largest city, located in the eastern section of the country. According to estimates in 2015, the population of Kabul is 4.635 million, which includes all the major ethnic groups. Rapid urbanization had made Kabul the world's 75th largest city.
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Zabi</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home.htm">Home</a></li>
+<!--         <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li> -->
+        <li><a href="localdishes.htm">Local Dishes</a></li>
+        <li><a href="historicalplaces.htm">Historical Places</a></li>
+		<li><a href="usefullinks.htm">Useful Links</a></li>
+		<li><a href="aboutme.htm">About me</a></li>
+		<li><a href="contactme.htm">Contact me</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="registration.htm"><span class="glyphicon glyphicon-user"></span> Registration</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+ <h1  style="text-align:center">KABUL</h1>
+ <br>
+ <br>
+<p style="font-size:larger;font-family:courier;display:block;margin-left:auto;margin-right:auto;text-align:justify;">  &emsp; &emsp; Kabul is the capital of Afghanistan and its largest city, located in the eastern section of the country. According to estimates in 2015, the population of Kabul is 4.635 million, which includes all the major ethnic groups. Rapid urbanization had made Kabul the world's 75th largest city.
 <br>
 <br>
 &emsp; &emsp; Kabul is located high up in a narrow valley between the Hindu Kush mountains, with an elevation of 1,790 metres (5,873 ft) making it one of the highest capitals in the world. The city is said to be over 3,500 years old, mentioned since at least the time of the Achaemenid Empire. It is at a strategic location along the trade routes of South and Central Asia, and a key location of the ancient Silk Road. It has been part of the Achaemenids followed by the Seleucids, Mauryans, Kushans, Kabul Shahis, Saffarids, Samanids, Ghaznavids, Ghurids, Khwarazmians, Qarlughids, Khaljis, Timurids, Mughals, and Hotaks, until finally becoming part of the Durrani Empire (also known as the "Afghan Empire") in 1747. Kabul became the capital of Afghanistan in 1776, during the reign of Timur Shah Durrani, the son of Ahmad Shah Durrani.
 </p>
-	
+</div>
 </body>
 </html>
