@@ -83,8 +83,7 @@ Gender:
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
 <br><br>
-
-<form class="form-horizontal">
+<form name = "Registration" onsubmit = "return formValidation(this);" method="post" class="form-horizontal">
   <div class="form-group">
     <label class="control-label col-sm-2" for="email">Email</label>
     <div class="col-sm-10">
@@ -94,23 +93,23 @@ Gender:
   <div class="form-group">
     <label class="control-label col-sm-2" for="pwd">Password</label>
     <div class="col-sm-10"> 
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+      <input type="password" class="form-control" id="pwd" placeholder="Your password must contain an uppercase letter, a digit, a special character, and be between 6 and 15 characters long">
     </div>
   </div>
 
   <div class="form-group">
   <label class="control-label col-sm-2 for="name">First name</label>
   <div class="col-sm-10">
-	<input type="text" class="form-control" id="name" placeholder="First Name" name="name">
+	<input type="text" class="form-control" id="fName" placeholder="First Name" name="name">
 	</div>
 	</div>
 	
 	
 	
 	 <div class="form-group">
-  <label class="control-label col-sm-2 for="name">Last name</label>
+  <label class="control-label col-sm-2 for="lname">Last name</label>
   <div class="col-sm-10">
-	<input type="text" class="form-control" id="lname" placeholder="Last Name" name="lname">
+	<input type="text" class="form-control" id="lName" placeholder="Last Name" name="lname">
 	</div>
 	</div>
 	
@@ -160,7 +159,7 @@ Gender:
 </div>  
   <div class="form-group"> 
     <div class="col-sm-offset-2 col-sm-10 col-md-2 col-md-offset-5">
-      <button type="submit" class="btn btn-default" formaction="submitted.htm">Submit</button>
+      <button type="submit" class="btn btn-default" id="submit" value="Submit" formaction="calculator.html">Submit</button>
 	  <button type="reset" class="btn btn-default">Reset</button>
     </div>
   </div>
@@ -180,5 +179,154 @@ Gender:
 
 </div>
 </div>
+
+<script>
+function formValidation(form)                                   
+{
+    var email = document.forms["Registration"]["email"]; 
+    var password = document.forms["Registration"]["pwd"]; 
+    var fName = document.forms["Registration"]["fName"];              
+    var lName = document.forms["Registration"]["lName"];   
+	var dob = document.forms["Registration"]["dob"];
+	var letters = /^[A-Za-z]+$/;
+	var passwordRegex = /^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,15})/;
+	var dateformat = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+	
+    if (email.value == "")                                  
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+  
+    if (email.value.indexOf("@", 0) < 0)                
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+  
+    if (email.value.indexOf(".", 0) < 0)                
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+      
+    if (password.value == "")                       
+    {
+        window.alert("Please enter your password");
+        password.focus();
+        return false;
+    }
+	
+	if(!password.value.match(passwordRegex)){
+		window.alert("Your password needs to be between 6 and 15 characters, and contain one uppercase letter, one numeric digit and one special character");
+		password.focus();
+		return false;
+	} 
+	
+    if (fName.value == "")                                 
+    {
+        window.alert("Please enter your first name.");
+        fName.focus();
+        return false;
+    }
+	
+    if(!fName.value.match(letters))
+	{	
+		window.alert("Please enter letters only for your name");
+		fName.focus();
+		return false;
+	}
+	
+	if(!lName.value.match(letters))
+	{	
+		window.alert("Please enter letters only for your last name");
+		lName.focus();
+		return false;
+	}
+	
+	
+    if (lName.value == "")                              
+    {
+        window.alert("Please enter your surname");
+        lname.focus();
+        return false;
+    }
+  
+  
+    if (dob.value == "")                          
+    {
+        window.alert("Please enter your valid date of birth.");
+        dob.focus();
+        return false;
+    }
+	
+	//not needed since html5 has in-form validation for date
+/*	if(dob.value.match(dateformat))
+	{
+		document.dob.text.focus();
+		//Test which seperator is used '/' or '-'
+		var opera1 = inputText.value.split('/');
+		var opera2 = inputText.value.split('-');
+		lopera1 = opera1.length;
+		lopera2 = opera2.length;
+		// Extract the string into month, date and year
+		if (lopera1>1)
+		{
+			var pdate = inputText.value.split('/');
+		}
+		else if (lopera2>1)
+		{
+			var pdate = inputText.value.split('-');
+		}
+		var dd = parseInt(pdate[0]);
+		var mm  = parseInt(pdate[1]);
+		var yy = parseInt(pdate[2]);
+		// Create list of days of a month [assume there is no leap year by default]
+		var ListofDays = [31,28,31,30,31,30,31,31,30,31,30,31];
+		if (mm==1 || mm>2)
+		{
+		if (dd>ListofDays[mm-1])
+		{
+		alert('Invalid date format!');
+		return false;
+		}
+		}
+		if (mm==2)
+		{
+		var lyear = false;
+	if ( (!(yy % 4) && yy % 100) || !(yy % 400)) 
+	{
+	lyear = true;
+	}
+	if ((lyear==false) && (dd>=29))
+	{
+	alert('Invalid date format!');
+	return false;
+	}
+	if ((lyear==true) && (dd>29))
+	{
+	alert('Invalid date format!');
+	return false;
+	}
+		}
+	}
+	else
+	{
+	alert("Invalid date format!");
+	document.form1.text1.focus();
+	return false;
+	} */
+	
+	
+  
+    return true;
+}</script>
+
+
+
+
 </body>
 </html>
